@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Chat Room</h1>
+  <div data-stage="start" hidden>
+    <h2>Log in</h2>
+    <form id="joinForm">
+      <p>
+        <label>
+          Name:
+          <input type="text" id="newName" value="Anonymous">
+        </label>
+      </p>
+      <p>
+        <button type="submit">Join</button>
+      </p>
+    </form>
+  </div>
+  <div data-stage="connecting" hidden>
+    <p>…</p>
+  </div>
+  <div data-stage="joined" hidden>
+    <h2>Users</h2>
+    <ul id="userList"></ul>
+    <h2>Chat</h2>
+    <form id="chatForm">
+      <span id="name"></span>
+      :
+      <input type="text" id="message">
+      <button type="submit">Send</button>
+    </form>
+    <div id="chatMessageList"></div>
+  </div>
+  <template id="t-chatUser">
+    <li class="chatUser">
+      <span data-value="name"></span>
+    </li>
+  </template>
+  <template id="t-chatMessage">
+    <div class="chatMessage" data-id="">
+      <span data-value="name"></span>
+      :
+      <span data-value="body"></span>
+      (<span data-js="date"></span>)
+    </div>
+  </template>
+  <script src="/chat/view/main.js"></script>
+</body>
+</html>
