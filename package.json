@@ -5,7 +5,11 @@
     "start": "jest --watch",
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/express-ws": "^3.0.0",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",

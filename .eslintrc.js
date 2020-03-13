@@ -23,6 +23,7 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-unused-vars": "off", // leave it to tsc
     "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-var-requires": "off",
     "arrow-parens": ["error", "always"],
     "class-methods-use-this": "off",
     "import/extensions": ["error", "never"],
